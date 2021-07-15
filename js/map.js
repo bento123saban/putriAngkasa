@@ -77,7 +77,7 @@ data.forEach(function(menu) {
     <!-- card box -->
     <div class="card" data-nama="${menu.nama}">
         <div class="card-konten">
-            <span class="tambah" data-id="${menu.ID}">+${menu.ID}</span>
+            <span class="tambah" data-id="${menu.ID}">+</span>
                 <img src="image/menu/${menu.img}" alt="">
                 <p class="card-deskripsi">${menu.deskripsi}</p>
                 <p class="card-harga">Rp. ${menu.harga},-</p>
