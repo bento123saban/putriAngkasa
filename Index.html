@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+	<title>Putri Angkasa</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+	<script src="https://kit.fontawesome.com/b9a9bf6e53.js" crossorigin="anonymous"></script>
+</head>
+
+<body onscroll="">
+	<nav id="navbar" class="navbar-box">
+		<a id="logo-box" href="#HOME">Putri Angkasa</a>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn" id="checkbtn">HOME <i class="fas fa-bars"></i>
+		</label>
+		<ul id="nav-menu">
+			<li class="nav-list" ><a href="#HOME" class="nav-link active HOME">Home</a></li>
+			<li class="nav-list" ><a href="#TENTANG" class="nav-link TENTANG">Tentang Kami</a></li>
+			<li class="nav-list" ><a href="#MENU" class="nav-link MENU">Menu</a></li>
+			<li class="nav-list" ><a href="#ORDER" class="nav-link ORDER">Order</a></li>
+			<li class="nav-list" ><a href="#KONTAK" class="nav-link KONTAK">Kontak</a></li>
+			<li class="nav-list nav-close" onclick="navClose()"><i class="fas fa-times-circle"></i></li>
+		</ul>
+	</nav>
+
+	<!-------------- Home ---------- -->
+	<section id="HOME" class="_home allMenu" data-direction="vertical-x" data-attach="fixed">
+		<div class="home-box">
+			<div class="logo-box">		
+				<img id="logo-Putri_Angkasa" src="20210428_220503.png" alt="">
+			</div>				
+			<h2>"CV. Putri Angkasa"</h2>
+			<p class="home-text">" Dicam mentitum tation scripta noluisse alia ferri expetendis aptent, at option latine felis fabellas at suspendisse ut dui nec risus. "</br>(Since 1990)</p>
+			<div class="home-link">
+				| <a href="#ORDER">ORDER</a> |
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ---------- about ----------- -->
+	<section id="TENTANG" class="_about allMenu" data-direction="horizontal-x" data-attach="fixed">
+		<div class="about-box">
+			<div class="slideshow">
+				<img class="mySlides slide" src="image/slide/about3.jpg">
+				<img class="mySlides slide" src="image/slide/about3.jpg">
+				<img class="mySlides slide" src="image/slide/about1.jpg">
+			</div>
+			<div class="about-box-in">
+				<h3 id="about-headings">Tentang kami -- Putri Angkasa</h3>
+				<div id="about-text-progress"></div>
+				<div id="about-content" class="about-content" onscroll="aboutTextScroll()">
+					<p class="about-text">Tempor per evertitur voluptaria iudicabit unum recteque atqui indoctum has persius postea dicunt molestie ad libris sagittis persius sadipscing voluptatibus potenti invidunt maximus efficitur iusto verear aenean invenire ac quam.</p>
+					<p class="about-text">Conubia dico salutatus justo necessitatibus definitiones intellegat litora postea dolorem nonumy suspendisse fugit necessitatibus homero error sale hendrerit posuere tale constituam suscipit vero sapien cubilia definitionem ancillae.</p>
+					<p class="about-text">Iriure posidonium fuisset qui vituperata sale equidem sapien interpretaris audire tacimates faucibus condimentum habitasse curae ludus vitae evertitur solum mel urna tortor mauris sea nonumes neglegentur cursus verterem splendide inciderint dapibus aliquam cum maluisset porro odio elaboraret ullamcorper eruditi consectetuer himenaeos conceptam tation est usu.</p>
+					<p class="about-text">Suscipit adipiscing natum tale eruditi aliquid recteque recteque cras habeo ancillae tacimates nostra tortor expetenda convenire omittantur amet eius dolores dissentiunt gloriatur natoque libris erat quo consectetur mediocritatem pertinacia error integer efficitur nominavi eum fusce.</p>
+					<span class="about-footer">-- putri angkasa (1990)</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- -------------- Menu ------------- -->
+	<section id="MENU" class="_menu allMenu" data-direction="vertical" data-attach="fixed">
+		<div class="menu-box">
+			<div class="menu-alert" id="menu-alert" onclick="alertClose(this)">
+				<div class="alert-box">
+					<p class="menu-alert-text">Harga yang tertera dapat berubah sewaktu-waktu sesuai kebijakan Putri Angkasa.<br><i class="fas fa-window-close"></i></p>
+				</div>
+			</div>
+			<div class="menu-headings">
+				<h2>MENU</h2>
+				<p class="menu-heading-text">" Makanan higenis bla bla bla bla."</p>
+			</div>
+		
+			<div class="menu-search">
+				<input id="menu-search" type="text" placeholder="Temukan menu anda..." onkeyup="cariMenu()">
+				<i class="fas fa-search"></i>
+			</div>
+				
+			<div class="menu-content">
+				<!-- <div id="menu-tab-button" class="menu-tab-button">
+					<button id="semua-button" class="semua-button" onclick="menu('semua', this)" >Semua</button>|
+					<button class="vip-button" onclick="menu('vip', this)" >VIP</button>|
+					<button class="ekonomi-button" onclick="menu('ekonomi', this)" >Ekonomi</button>
+					<label id="menu-to-top"><a id="menu-top-link" href="#MENU"><i class="fas fa-chevron-up"></i></a></label>
+				</div> -->
+							
+				<div class="menu-list-content" id="menu-list-content">
+
+				</div>				
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ------- Layanan --------- -->
+	<section id="ORDER" class="_order allMenu" data-direction="vertical-x" data-attach="fixed">
+		<h1>Order</h1>
+		<p class="order-ket">Anda juga dapat memesan menu selain yang kami miliki. Silahkan masukkan permintaan menu anda pada kolom deskripsi.</p>
+		<div class="order-container" >
+			<label for="order-nama">Nama Lengkap :</label>
+			<input type="text" name="nama" id="order-nama" class="order-input" placeholder="Masukkan Nama Anda" required>
+
+			<label for="order-nama">No Telpon :</label>
+			<input type="number" name="telp" id="order-telpon" class="order-input" placeholder="Masukkan Nomor Telepon Anda" required>
+
+			<p class="daftar-order">Daftar Order :</p>
+			<ol class="order-pilih">
+				
+			</ol>
+			<span class="total-harga"></span>
+
+			<label for="order-deskripsi" class="label">Deskripsi order:</label>
+			<textarea name="desc" id="order-deskripsi" class="order-input" placeholder="Masukkan Deskripsi orderan Anda, atau jika anda memiliki permintaan tertentu, silahkan masukan disini" required></textarea>
+
+			<label for="alamat" class="label">Alamat:</label>
+			<textarea name="alamat" id="alamat" class="order-input" placeholder="Masukan Alamat Lengkap Anda untuk pengantaran katering." required></textarea>
+
+			<p class="cek-input">Tambahkan item dan masukan semua data</p>
+			<button type="submit" class="order-button" id="order-button">O R D E R</button>
+		</div>
+	</section>
+
+	<section id="KONTAK" class="_kontak allMenu" data-direction="vertical" data-attach="fixed">
+		<div class="kontak-box">
+			<div class="kontak-headings">
+				<h2>KONTAK</h2>
+				<p>Tetap berdekatan dengan kami. Hubungi kontak berikut untuk mendapatkan informasi lebih lanjut.</p>
+			</div>
+		
+			<div class="kontak-numbar">
+				<a class="kontak-link" href=""><i class="fab fa-whatsapp"></i><span>081354741823</span></a>
+				<a class="kontak-link" href=""><i class="fas fa-phone"></i><span>081354741823</span></label>
+				<a class="kontak-link" href=""><i class="fas fa-envelope"></i><span>putriAngkasa@gmail.com</span></a>
+			</div>
+			<div class="kontak-time">
+				<h4>Jam Layanan :</h4>
+				<ul>
+					<li>Senin - Sabtu: 09.00 - 18.00 WIT</li>
+					<li>Minggu: 10.00 - 16.00 WIT</li>
+					<li>Layanan hanya tersedia untuk Kota Ambon</li>
+				</ul>
+			</div>
+			
+			<div id="map">
+				<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+					<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+					<script>
+						(function () {
+							var setting = {"height":260,"width":362,"zoom":16,"queryString":"DAPUR PINK PUTRI ANGKASA, Jalan Pattimura Airport, Laha, Kota Ambon, Maluku, Indonesia","place_id":"ChIJ_yz9AyjnbC0RloiYZw4O-0E","satellite":false,"centerCoord":[-3.70373475102797,128.0889792],"cid":"0x41fb0e0e67988896","lang":"en","cityUrl":"/indonesia/ambon-36487","cityAnchorText":"Map of Ambon, Indonesia","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"531938"
+							};
+							var d = document;
+							var s = d.createElement('script');
+							s.src = 'https://1map.com/js/script-for-user.js?embed_id=531938';
+							s.async = true;
+							s.onload = function (e) {
+								window.OneMap.initMap(setting)
+							};
+							var to = d.getElementsByTagName('script')[0];
+							to.parentNode.insertBefore(s, to);
+						})();
+					</script><a href="https://1map.com/map-embed"></a>
+				</div>
+			</div>
+			
+		</div> <!-- kontak box -->
+	</section>
+
+
+	<div class="waves">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+			</defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+			</g>
+		</svg>
+	</div>
+
+	<a id="backToTop" href="#"><i class="fas fa-paper-plane"></i></a>
+
+	<div id="window-progress"></div>
+
+	<script src="js/main.js"></script>
+	<script src="js/window.onscroll.js"></script>
+	<script src="js/map.js"></script>
+
+	<script>
+
+		let orderArray = []
+
+		window.addEventListener('load', function(e) {
+			daftarOrder()
+		})
+
+		window.addEventListener('click', function(e){
+			if (e.target.matches('.tambah')) {
+				tambahOrder(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.fa-trash')) {
+				hapusItem(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.order-button')){
+				cekIsi()
+			}
+		})
+
+		window.addEventListener('change', function(e){
+			if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
+
+		window.addEventListener('keyup', function(e){
+			if(e.target.matches('.order-input')){
+				jikaKosong(e.target)
+			}
+			else if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
+    </script>
+
+</body>
+</html>
